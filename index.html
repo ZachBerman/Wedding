@@ -168,7 +168,8 @@
             '</div>';
 
         var infowindow = new google.maps.InfoWindow({
-          content: contentString
+          content: contentString,
+          maxWidth: 140
         });
 
           var marker = new google.maps.Marker({
@@ -184,7 +185,7 @@
       </script>
     </div>
   
-    <!-- Accommodation Section -->
+    <!-- Lodging Section -->
     <section data-aos="fade-up" data-aos-duration="500" id="lodging" class="container content-section text-center">
 
       <div class="row">
@@ -269,7 +270,7 @@
             <p>Wedding Ceremony begins at 5pm</p>
             <p>Dinner at 7pm</p>
             <p>Dancing at 9pm</p>
-            <p>Shuttle from Golden Eco-Adventure Ranch back to town of Golden at midnight, and up to Kicking Horse if needed/p>
+            <p>Shuttle from Golden Eco-Adventure Ranch back to town of Golden at midnight, and up to Kicking Horse if needed</p>
           </div>
         </div>
       </div>
@@ -314,7 +315,7 @@
           </p>
 
           <p>Will you be able to make it?
-            <input type="text" name="Attendance?" id="Attendance?" placeholder="Come on up!">
+            <input type="text" name="Attendance?" id="Attendance?" placeholder="Come on up!" required>
           </p> 
           <p>How many guests will you be bringing?
             <input type="num" name="# of guests" id="guests" placeholder="#">
@@ -350,7 +351,7 @@
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <!-- <h5>See you in September!</h5> -->
+            <h3>See you in September!</h3>
         </div>
     </footer>
 
