@@ -16,8 +16,7 @@
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway" rel="stylesheet">
 
     <!-- Theme CSS -->
     <link href="css/wedding.css" rel="stylesheet">
@@ -83,7 +82,9 @@
           <div class="row">
             <div class="col-md-10 col-md-offset-1">
             <h1 class="brand-heading married">ADRIENNE &amp; ZACH</h1>
-            <h2>September 2, 2017</h2>
+            <h2 class="married-header">Are getting married!</h2>
+            <h2 class="date oswald">September 2, 2017</h2>
+            <p class="location oswald">Golden Eco-Adventure Ranch</p>
               </a>
             </div>
           </div>
@@ -119,8 +120,18 @@
 
       <div class="row gettingheresection">
         <div class="col-sm-12" data-aos="fade-up" data-aos-duration="500">
-          <h2>Getting Here</h2>
-            <p>We are aware that most of you will have to fly to get to Golden, and we are so grateful you will be joining us for our special day. Perhaps the easiest and most economical way to get here is to fly to Calgary International Airport, which offers many daily flights from the USA for reasonable rates. From there, you will either need to rent a car or take a shuttle. The Canadian Greyhound line is actually quite nice, affordable, and has free wireless and has approximately 3 daily shuttles to Golden from Calgary. The ride is about 3-4 hours on the bus.  There is a public train and a Greyhound bus from the airport to the Greyhound Terminal. There is also a shuttle bus that will take you from the airport to the terminal for $10 CAD..</p>
+        <div class="row">
+          <h2>So you're coming!</h2>
+            <p>We are so grateful you will be joining us to celebrate our special day. Perhaps the easiest, most economical way to get here is to fly to Calgary International Airport (YYC). The airport has many daily flights from the US for reasonable rates.</p>
+          <h3>From there...</h3>
+          <ul>
+            <li class="pull-left">Rent a car and drive the Trans-Canada! Takes approximately 2 hours and 45 minutes.</li>
+            <li class="pull-left">Take an airport shuttle or the public transit train to the Greyhound bus line which has 3 daily shuttles to Golden from downtown Calgary.</li>
+            <li class="pull-left">Take a shuttle to Golden from the airport (a little more expensive).</li>
+          </ul>
+        </div>
+        <br>
+        <br>
             <h4><a href="http://www.airportshuttlecalgary.ca/home">Airport Shuttle</a></h4>
               <br>
             <h4><a href="https://www.greyhound.ca/">Greyhound</a></h4>
@@ -141,15 +152,34 @@
           var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 8,
             center: myLatLng,
+            mapTypeControl: false,
             styles: [{"featureType":"landscape","stylers":[{"hue":"#FFBB00"},{"saturation":43.400000000000006},{"lightness":37.599999999999994},{"gamma":1}]},{"featureType":"road.highway","stylers":[{"hue":"#FFC200"},{"saturation":-61.8},{"lightness":45.599999999999994},{"gamma":1}]},{"featureType":"road.arterial","stylers":[{"hue":"#FF0300"},{"saturation":-100},{"lightness":51.19999999999999},{"gamma":1}]},{"featureType":"road.local","stylers":[{"hue":"#FF0300"},{"saturation":-100},{"lightness":52},{"gamma":1}]},{"featureType":"water","stylers":[{"hue":"#0078FF"},{"saturation":-13.200000000000003},{"lightness":2.4000000000000057},{"gamma":1}]},{"featureType":"poi","stylers":[{"hue":"#00FF6A"},{"saturation":-1.0989010989011234},{"lightness":11.200000000000017},{"gamma":1}]}],
               scrollwheel: false,
           });
+
+          var contentString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Golden Eco Adventure Ranch</h1>'+
+            '<div id="bodyContent">'+
+            '<p class="secondHeading">872 McBeath Road</p>'+
+            '<p class="secondHeading">Golden, BC V0A 1H0</p>'+
+            '</div>'+
+            '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
 
           var marker = new google.maps.Marker({
             position: myLatLng,
             map: map,
             title: 'Golden Eco-Adventure Ranch'
           });
+          google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map, marker);
+        });
+        infowindow.open(map,marker);
         }
       </script>
     </div>
@@ -170,7 +200,7 @@
       <div class="row">
         <div class="col-sm-12">
           <p class="pull-left">The Golden Eco-Adventure Ranch offers full service RV and tent camping with showers, just say you are with the wedding that weekend and they will put your site with others there for the festivities.</p>
-            <h5><a href="http://goldenadventurepark.com/camping-facilities/">Camping at the Eco-Ranch</a></h5>
+            <h4><a href="http://goldenadventurepark.com/camping-facilities/">Camping at the Eco-Ranch</a></h4>
         </div>
       </div>
       <div class="row">
@@ -183,7 +213,8 @@
           <p>There are lots of rentals in the Town of Golden, and up on the mountain near Kicking Horse Ski Area (20 minute drive)</p>
       <div class="row">
         <div class="col-sm-12">
-          <h5><a href="https://www.vrbo.com/vacation-rentals/canada/british-columbia/british-columbia-rockies/golden?sleeps=4-plus&from-date=2017-09-01&to-date=2017-09-04">VRBO Rentals</a></h5>
+          <h4><a href="https://www.vrbo.com/vacation-rentals/canada/british-columbia/british-columbia-rockies/golden?sleeps=4-plus&from-date=2017-09-01&to-date=2017-09-04">VRBO Rentals</a></h4>
+          <h4><a href="https://www.airbnb.ca/s/Golden-BC?guests=1&checkin=&checkout=&ss_id=89pqqe1l&ss_preload=true&adults=1&children=0&infants=0&source=bb&page=1&s_tag=AXdIRxqZ&allow_override%5B%5D=">AirBNB</a></h4>
         </div>
       </div>
       <div class="row">
@@ -193,13 +224,13 @@
       </div>
       <div class="row">
         <div class="col-sm-12">
-          <p>KHMR is willing to block off groups of 1-2 BD condos at the ski area and offer a 10% discount if you are booking for our wedding weekend. Both the Glacier and Mountaineer lodges are right at the base area if you want to take the gondola up while you are here for mountain biking, hiking, or to do the via feratta!</p>
-          <p>There are large variety of condos available, some better for couples, some for groups with children, etc. Some of the VRBO and AirBNB rentals are up at the ski hill to, the internet has a lot of options!</p>
+          <p>Kicking Horse Mountain Resort will block off condos for our group, offering 1, 2, and 3 bedroom suites at the Glacier Lodge (where Adrienne &amp; Zach rent their apartment).  Wedding party guests will receive 10% off base rates. You can also keep your eyes open for sales in the building which happen frequently.  This is a fun area to stay in, because the gondola and bike park are right outside the building, for easy hiking, biking, or accessing the via ferrata and the Eagle's Eye restaurant on top of the mountain!</p>
+          <p>If you want someone to chat with about your options, you can email our favorite front desk gal' Katie Diddams, who manages the Glacier Lodge - <a href="mailto:kh.gc@bellstar.ca" target="_top">kh.gc@bellstar.ca</a></p>
         </div>
       </div>
       <div class="row">
         <div class="col-sm-12">
-          <h5><a href="https://inntopia.travel/Ecomm/Shop/Lodging/817288/?_ga=1.162195448.536184471.1478818817">Condos at Kicking Horse</a></h5>
+          <h4><a href="https://inntopia.travel/Ecomm/Shop/Lodging/817288/?_ga=1.162195448.536184471.1478818817">Condos at Kicking Horse</a></h4>
         </div>
       </div>
 
@@ -235,10 +266,10 @@
         </div>
         <div class="row">
           <div class="col-sm-12">
-            <p>Wedding Ceremony begins at 4:30pm</p>
-            <p>Dinner at 6:30pm</p>
-            <p>Dancing at 8:00pm</p>
-            <p>Shuttle from Golden Eco-Adventure Ranch back to town of Golden at 12:00 am</p>
+            <p>Wedding Ceremony begins at 5pm</p>
+            <p>Dinner at 7pm</p>
+            <p>Dancing at 9pm</p>
+            <p>Shuttle from Golden Eco-Adventure Ranch back to town of Golden at midnight, and up to Kicking Horse if needed/p>
           </div>
         </div>
       </div>
@@ -294,7 +325,7 @@
           <p>Do you want to be a vegetarian at our wedding?
             <input type="text" name="Vegetarian?" id="vegetarian?" placeholder="What's it gonna be?">
           </p>
-          <p>Any song requests?
+          <p>Request your favorite dance song...
             <input type="text" name="Songs" id="Songs?" placeholder="Hotline Bling?">
           </p>
           <p>

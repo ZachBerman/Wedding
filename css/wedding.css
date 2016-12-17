@@ -1,11 +1,12 @@
-* {
+.oswald {
+  font-family: 'Oswald', sans-serif;
 }
 body {
   width: 100%;
   height: 100%; 
   color: #fff;
-  background-color: #7974A8;
-  font-family: 'Didact Gothic', sans-serif;
+  background-color: #A09BD1;
+  font-family: 'Raleway', sans-serif;
 }
 html {
   width: 100%;
@@ -64,7 +65,7 @@ a:focus {
 }
 .navbar-custom .navbar-toggle:focus,
 .navbar-custom .navbar-toggle:active {
-  bor: none;
+  border: none;
 }
 .navbar-custom .navbar-brand {
   font-weight: 700;
@@ -80,7 +81,9 @@ a:focus {
   -moz-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
   color: #3D2AAD;
+  font-family: 'Oswald', sans-serif;
   font-weight: bold;
+  font-size: 18px;
 }
 .navbar-custom .nav li a:hover {
   color: #BE0EE6;
@@ -140,6 +143,10 @@ a:focus {
   font-family: 'Oswald', sans-serif;
   font-weight: bold;
 }
+.married-header {
+  font-size: 40px;
+  font-family: 'Oswald', sans-serif;
+}
 .intro .intro-body .intro-text {
   font-size: 18px;
 }
@@ -151,7 +158,7 @@ a:focus {
   .intro .intro-body .brand-heading {
     font-size: 80px;
     color: #fff;
-    margin-top: 500px;
+    margin-top: 300px;
   }
   .intro .intro-body .intro-text {
     font-size: 26px;
@@ -292,7 +299,10 @@ ul.banner-social-buttons {
   }
   .intro .intro-body .brand-heading {
     padding-top: 150px;
-    font-size: 25px;
+    font-size: 22px;
+  }
+  .date {
+    font-size: 14px;
   }
 }
 footer {
@@ -532,6 +542,26 @@ small {
   padding-top: -100px;
  }
 
+.firstHeading {
+  color: #3D2AAD;
+  font-size: 16px;
+}
+.secondHeading {
+  font-size: 10px;
+  color: #BE0EE6;
+  margin-top: -25px;
+}
+.location {
+  margin-top: -30px;
+}
+.married-header {
+  margin-top: -30px;
+}
+ul li {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: bold;
+}
 /* navbar background - 122
  navbar background mobile - 61
  navbar a color - 89 both
