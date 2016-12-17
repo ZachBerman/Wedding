@@ -30,15 +30,61 @@ p {
   line-height: 1.5;
   font-weight: bold;
 }
-.date {
-  font-size: 35px;
-  text-shadow: 2px 2px #3D2AAD;
+#rsvp {
+  padding-top: 200px;
+}
+#activities {
+  padding-top: 200px;
+}
+#lodging {
+  padding-top: 200px;
+}
+#schedule {
+  padding-top: 50px;
+}
+#gettinghere {
+  padding-top: 100px;
 }
 @media (min-width: 768px) {
   p {
     margin: 0 0 35px;
     font-size: 20px;
     line-height: 1.6;
+  }
+  .navbar-custom {
+    padding: 20px 0;
+    border-bottom: none;
+    letter-spacing: 1px;
+    background: transparent;
+    -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+  }
+  .navbar-custom.top-nav-collapse {
+    padding: 0;
+    background: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  }
+  .intro {
+    height: 100%;
+    padding: 0;
+  }
+  .intro .intro-body .brand-heading {
+    font-size: 80px;
+    color: #fff;
+    margin-top: 300px;
+    text-shadow: 2px 2px #3D2AAD;
+  }
+  .intro .intro-body .intro-text {
+    font-size: 26px;
+    color: #DCDFE0;
+  }
+  .download-section {
+    padding: 100px 0;
+  }
+  #map {
+    height: 450px;
+    margin-top: 100px;
   }
 }
 a {
@@ -105,22 +151,6 @@ a:focus {
 .navbar-custom .nav li.active a {
   color: #BE0EE6;
 }
-@media (min-width: 768px) {
-  .navbar-custom {
-    padding: 20px 0;
-    border-bottom: none;
-    letter-spacing: 1px;
-    background: transparent;
-    -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
-    -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
-    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
-  }
-  .navbar-custom.top-nav-collapse {
-    padding: 0;
-    background: rgba(255, 255, 255, 0.8);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
-  }
-}
 .intro {
   display: table;
   width: 100%;
@@ -156,21 +186,9 @@ a:focus {
 .intro .intro-body .intro-text {
   font-size: 18px;
 }
-@media (min-width: 768px) {
-  .intro {
-    height: 100%;
-    padding: 0;
-  }
-  .intro .intro-body .brand-heading {
-    font-size: 80px;
-    color: #fff;
-    margin-top: 300px;
-    text-shadow: 2px 2px #3D2AAD;
-  }
-  .intro .intro-body .intro-text {
-    font-size: 26px;
-    color: #DCDFE0;
-  }
+.date {
+  font-size: 35px;
+  text-shadow: 2px 2px #3D2AAD;
 }
 @-webkit-keyframes pulse {
   0% {
@@ -200,7 +218,7 @@ a:focus {
     transform: scale(1);
   }
 }
-  .content-section {
+.content-section {
     padding-top: 150px;
   }
 .download-section {
@@ -219,14 +237,7 @@ a:focus {
   height: 400px;
   margin-top: 100px;
 }
-@media (min-width: 767px) {
-  .download-section {
-    padding: 100px 0;
-  }
-  #map {
-    height: 450px;
-    margin-top: 100px;
-  }
+
 @media (max-width: 767px) {
   .container {
     padding-left: 10px;
@@ -250,6 +261,7 @@ a:focus {
     letter-spacing: 2px;
   }
 }
+
 footer {
   padding: 50px 0;
 }
@@ -494,18 +506,4 @@ ul li {
   line-height: 1.5;
   font-weight: bold;
 }
-#rsvp {
-  padding-top: 200px;
-}
-#activities {
-  padding-top: 200px;
-}
-#lodging {
-  padding-top: 200px;
-}
-#schedule {
-  padding-top: 50px;
-}
-#gettinghere {
-  padding-top: 100px;
-}
+
