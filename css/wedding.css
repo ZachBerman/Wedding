@@ -509,3 +509,6 @@ ul li {
 #gettinghere {
   padding-top: 100px;
 }
+.form-horizontal {
+  border-radius: 1px solid black;
+}
