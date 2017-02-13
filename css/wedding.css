@@ -405,7 +405,7 @@ small {
   z-index: 100;
   display: none;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.8);;
+  color: #3D2AAD;
   /*background-color: #ff9000;*/
  }
 
@@ -442,6 +442,7 @@ ul li {
 }
 #rsvp {
   padding-top: 200px;
+  color: #fff;
 }
 #activities {
   padding-top: 200px;
@@ -455,8 +456,9 @@ ul li {
 #gettinghere {
   padding-top: 100px;
 }
-.form-horizontal {
-  border-radius: 1px solid black;
+#footer-image {
+  background: url(../img/botanicals.jpg) bottom center scroll;
+  color: black;
 }
 
 @media (min-width: 767px) {

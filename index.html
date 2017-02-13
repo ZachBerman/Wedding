@@ -160,7 +160,7 @@
           var contentString = '<div id="content">'+
             '<div id="siteNotice">'+
             '</div>'+
-            '<h1 id="firstHeading" class="firstHeading">Golden Eco Adventure Ranch</h1>'+
+            '<h1 id="firstHeading" class="firstHeading"><a href="https://goldenadventurepark.com/">Golden Eco Adventure Ranch</a></h1>'+
             '<div id="bodyContent">'+
             '<p class="secondHeading">872 McBeath Road</p>'+
             '<p class="secondHeading">Golden, BC V0A 1H0</p>'+
@@ -232,6 +232,9 @@
       <div class="row">
         <div class="col-sm-12">
           <h4><a href="https://inntopia.travel/Ecomm/Shop/Lodging/817288/?_ga=1.162195448.536184471.1478818817">Condos at Kicking Horse</a></h4>
+          <h4><a href="http://www.copperhorselodge.com/">Copper Horse Lodge</a></h4>
+          <h4><a href="http://www.winstonlodge.com/index.php">Winston Lodge</a></h4>
+          <h4><a href="http://www.vagabondlodge.ca/">Vagabond Lodge</a></h4>
         </div>
       </div>
 
@@ -305,7 +308,7 @@
     <!-- Contact Section -->
     <section id="rsvp" data-aos="fade-up" data-aos-duration="500" class="container content-section text-center">
         <h1 class="text-center">RSVP</h1>
-        <form name="contact_form" id="contact-form" method="POST" action="https://formspree.io/zberms@gmail.com" class="form-horizontal">
+        <form name="contact_form" id="contact-form" method="POST" action="https://formspree.io/ajross14@gmail.com" class="form-horizontal">
           <p>Name: &nbsp;
             <input type="text" name="Name" id="Form_Form_name" minlength="3" placeholder="Name" required>
           </p>
@@ -340,7 +343,7 @@
             </div>
           </p>
         </form>
-          </div>
+      </div>
     </section>
 
     <!-- Up-Arrow -->
@@ -349,11 +352,15 @@
     </a>
 
     <!-- Footer -->
-    <footer>
-        <div class="container text-center">
-            <h3>See you in September!</h3>
-        </div>
-    </footer>
+    <section id="footer-image">
+    <section>
+      <footer>
+          <div class="container text-center">
+              <h3>See you in September!</h3>
+          </div>
+      </footer>
+      </section>
+    </section>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -381,7 +388,7 @@
       var defaultSubmitText = $submit.val();
 
         $.ajax({
-            url: '//formspree.io/zberms@gmail.com',
+            url: '//formspree.io/ajross14@gmail.com',
             method: 'POST',
             data: $(this).serialize(),
             dataType: 'json',
