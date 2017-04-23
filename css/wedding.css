@@ -5,7 +5,7 @@ body {
   width: 100%;
   height: 100%; 
   color: #fff;
-  background-color: #A09BD1;
+  background-color: #4f0435;
   font-family: 'Raleway', sans-serif;
 }
 html {
@@ -35,7 +35,7 @@ p {
   text-shadow: 2px 2px #3D2AAD;
 }
 a {
-  color: #3D2AAD;
+  color: #6ecc02;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -43,7 +43,18 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #BE0EE6;
+  color: #F7F765;
+}
+a.dark {
+  color: #064215;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+a.dark:hover,
+a.dark:focus {
+  text-decoration: none;
+  color: #129600;
 }
 .light {
   font-weight: 400;
@@ -372,6 +383,9 @@ small {
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
+.btn.focus, .btn:focus, .btn:hover {
+  color: #F7F765;
+}
 
 .sched-header {
   color: #fff;
@@ -405,7 +419,7 @@ small {
   z-index: 100;
   display: none;
   text-decoration: none;
-  color: #3D2AAD;
+  color: #6ecc02;
   /*background-color: #ff9000;*/
  }
 
