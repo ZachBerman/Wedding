@@ -487,25 +487,6 @@
       })
     });
     </script>
-    <script>
-    var scrollPos = 0;
-      $('.modal')
-      .on('show.bs.modal', function (){
-      scrollPos = $('body').scrollTop();
-      $('body').css({
-      overflow: 'hidden',
-      position: 'fixed',
-      top : -scrollPos
-      });
-      })
-      .on('hide.bs.modal', function (){
-      $('body').css({
-      overflow: '',
-      position: '',
-      top: ''
-      }).scrollTop(scrollPos);
-      });
-</script>
 
 </body>
 
