@@ -246,15 +246,14 @@
     <section id="schedule" class="content-section text-center">
 
       <div class="download-section">
-        <div class="container">
-          <div class="col-sm-12">
-            <h1 class="sched-header">Schedule</h1>
-          </div>
+        <div class="col-sm-12">
+          <h1 class="sched-header">Schedule</h1>
         </div>
       </div>
       <br>
       <br>
       <div data-aos="fade-up" data-aos-duration="500">
+        <div class="container">
         <div class="row">
           <div class="col-sm-12">
             <h3 class="text-center">Friday, September 1st</h3>
@@ -286,6 +285,7 @@
             <p><u>Wear something comfortable!</u></p>
           </div>
         </div>
+      </div>
       </div>
 
     </section>
@@ -400,11 +400,14 @@
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
       </div>
-      <div class="modal-body text-center">
+      <div class="modal-body text-center" style="color:#000;">
         <img src="img/tux.png">
         <br>
         <br>
-        <img src="img/tux-desc.png">
+        <p style="font-size: 16px"><span style="font-size:20px;"><strong>Can&#183;adi&#183;an Tux&#183;e&#183;do</strong></span><br>
+        <em>noun</em><span style="color:gray;">&emsp;NORTH AMERICAN&emsp;<em>humorous</em></span><br>
+        a denim jacket worn with a pair of jeans<br>
+        <span style="color:gray;">"if you can wear denim to the office, then you can wear a Canadian tuxedo"</span></p>
       </div>
     </div>
   </div>
@@ -484,6 +487,25 @@
       })
     });
     </script>
+    <script>
+    var scrollPos = 0;
+      $('.modal')
+      .on('show.bs.modal', function (){
+      scrollPos = $('body').scrollTop();
+      $('body').css({
+      overflow: 'hidden',
+      position: 'fixed',
+      top : -scrollPos
+      });
+      })
+      .on('hide.bs.modal', function (){
+      $('body').css({
+      overflow: '',
+      position: '',
+      top: ''
+      }).scrollTop(scrollPos);
+      });
+</script>
 
 </body>
 

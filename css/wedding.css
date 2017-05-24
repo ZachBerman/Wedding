@@ -556,7 +556,7 @@ ul li {
 }
 
 body.modal-open {
-    overflow: visible;
+    overflow: visible !important;
 }
 
 .modal-header {
