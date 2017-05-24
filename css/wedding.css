@@ -383,12 +383,27 @@ small {
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-.btn.focus, .btn:focus, .btn:hover {
+.btn-lg.focus, .btn-lg:focus, .btn-lg:hover {
   color: #fff;
   background-color: #000;
   border: 1px dashed #fff;
 }
-
+.btn-info {
+    color: #000;
+    background-color: #6ecc02;
+    border-color: #6ecc02;
+}
+.btn-info:active:focus {
+  color: #000;
+  background-color: #6ecc02;
+  border:none;
+  box-shadow: none;
+}
+.btn-info.focus, .btn-info:focus, .btn-info:hover {
+  color: #000;
+  background-color: #F7F765;
+  border-color: #F7F765;
+}
 .sched-header {
   color: #fff;
 }
@@ -538,4 +553,12 @@ ul li {
 
 .text-white {
   color: #fff;
+}
+
+body.modal-open {
+    overflow: visible;
+}
+
+.modal-header {
+  border-bottom: none;
 }
