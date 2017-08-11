@@ -564,3 +564,7 @@ body.modal-open {
 .modal-header {
   border-bottom: none;
 }
+
+.green {
+  color: #6ecc02;
+}
